@@ -86,6 +86,17 @@ nav img{
 nav .fa{
     display: none;
 }
+.inici{
+    text-align: center;
+    color: #fff;
+    padding-left: 32%;
+    padding-top: 40%;
+    position: absolute;
+}
+.inici p{
+    padding-top: 10px;
+    font-size: 13px;
+}
 
 @media(max-width: 700px){
     .tex-box h1{
@@ -107,7 +118,7 @@ nav .fa{
     }
     nav .fa{
         display: block;
-        color: #fff;
+        color: #000;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -115,23 +126,20 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+    .inici{
+        padding-top: 450px;
+        padding-right: 120px;
+    }
+    .inici p{
+        font-size: 8px;
+    }
 }
 
 /*main*/
 main{
     background: #000;
 }
-.inici{
-    text-align: center;
-    color: #fff;
-    padding-left: 32%;
-    padding-top: 40%;
-    position: absolute;
-}
-.inici p{
-    padding-top: 10px;
-    font-size: 13px;
-}
+
 
 /*galeria*/
 .titol-galeria{
@@ -202,7 +210,8 @@ main{
     margin: 10px 0;
 }
 .dia img{
-    width: 100px
+    width: 100px;
+    padding: 20px;
 }
 .dia:hover{
     box-shadow: 0 0 20px 0px rgba(255,255,255,0.5);
@@ -279,3 +288,4 @@ footer{
     cursor: pointer;
     padding: 18px 0;
 }
+
