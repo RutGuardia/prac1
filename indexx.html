@@ -5,7 +5,6 @@
         <meta name="viewport" content="widht=device-width, initialscale=1.0"> <!--declaracion viewport-->
         <link rel="stylesheet" href="sss.css"> <!--guia de estilos-->
         <title>Perennial</title> <!--titulo identificativo de la página-->
-        <!--falta fuente, iconos-->
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     
@@ -19,8 +18,8 @@
                     <ul>
                         <li><a href="#inici">INICI</a></li>
                         <li><a href="#galeria">GALERIA</a></li>
-                        <li><a href="#historia">FOTO DEL DIA</a></li>
-                        <li><a href="">LA TEVA HISTÒRIA</a></li>
+                        <li><a href="#dia">FOTO DEL DIA</a></li>
+                        <li><a href="#historia">LA TEVA HISTÒRIA</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -31,11 +30,11 @@
                 <b>/pəˈrnɪəl/</b>
                 <p>Terme d'origen llatí
                    <br>Incessant, continu, que no mor </p>
-                <a href="" class="hero-btn">Descobreix</a>
+                <a href="#inici" class="hero-btn">Descobreix</a>
             </div>
     </header>
-    <section class="inici" id="inici"> 
-                <h2>La història no es borra</h2>
+    <section class="inici"> 
+                <h2 id="inici">La història no es borra</h2>
                 <p>Realitzar una fotografia és crear un document històric, ajudar a il·lustrar part de la memòria. Quan fotografiem congelem un instant, 
                 <br>capturant així la realitat del moment, i aquesta imatge del present en un futur podria ajudar historiadors a entendre la nostra societat. 
                 <br>Així, tota fotografia es converteix en document històric, un testimoniatge visual i gràfic dels costums d'una època, així com de moments concrets crucials</p>
@@ -43,7 +42,7 @@
     </div>
 
     <main aria-label="contingut">
-        <h2 class="titol-galeria">Galeria d'Imatges</h2>
+        <h2 class="titol-galeria" id="galeria">Galeria d'Imatges</h2>
         <div class="galeria">
         <section>
             <div class="row">
@@ -70,15 +69,15 @@
 
         <section class="dia">
             <img src="images/galeria/´joker.jpg">
-            <p>imatge del dia 
+            <p id="dia"><b>IMATGE DEL DIA</b> 
                 <br>El Joker s'origina fa 150 anys, quan l'escriptor més popular de França, Victor Hugo, escriu una de les novel·les menys recordades, 'L'home que riu', un melodrama extrem carregat de soroll i de fúria.
                 L'autor dels miserables es va inspirar en aquest home per crear el famós personatge del jòquer.
                 
             </p>
         </section>
 
-        <aside id="hirsoria">
-        <h2 class="titol-histories">Comparteix amb nosaltres les teves històries</h2>
+        <aside>
+        <h2  id="historia" class="titol-histories">Comparteix amb nosaltres les teves històries</h2>
         <form action="">
             <input type="text" placeholder="Nom" required>
             <input type="email" placeholder="Correu electrònic" required>
