@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="es"> <!--idioma-->
+    <head>
+        <meta charset="utf-8"> <!--codificación caracteres-->
+        <meta name="viewport" content="widht=device-width, initialscale=1.0"> <!--declaracion viewport-->
+        <link rel="stylesheet" href="sss.css"> <!--guia de estilos-->
+        <title>Perennial</title> <!--titulo identificativo de la página-->
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    
+<body>
+    <div class="header">
+    <header aria-label="capcelera">
+         <nav>
+             <a href="index.html"><img src="images/logotipo.png"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                    <ul>
+                        <li><a href="#inici">INICI</a></li>
+                        <li><a href="#galeria">GALERIA</a></li>
+                        <li><a href="#dia">FOTO DEL DIA</a></li>
+                        <li><a href="#historia">LA TEVA HISTÒRIA</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+    
+            <div class="tex-box">
+                <h1>PERENNIAL</h1>
+                <b>/pəˈrnɪəl/</b>
+                <p>Terme d'origen llatí
+                   <br>Incessant, continu, que no mor </p>
+            <a class="hero-btn">Descobreix</a>
+            </div>
+    </header>
+    <section class="inici"> 
+                <h2 id="inici">La història no es borra</h2>
+                <p>Realitzar una fotografia és crear un document històric, ajudar a il·lustrar part de la memòria. Quan fotografiem congelem un instant, 
+                <br>capturant així la realitat del moment, i aquesta imatge del present en un futur podria ajudar historiadors a entendre la nostra societat. 
+                <br>Així, tota fotografia es converteix en document històric, un testimoniatge visual i gràfic dels costums d'una època, així com de moments concrets crucials</p>
+        </section>
+    </div>
+
+    <main aria-label="contingut">
+        <h2 class="titol-galeria" id="galeria">Galeria d'Imatges</h2>
+        <div class="galeria">
+        <section>
+            <div class="row">
+            <div class="column">
+                <div class="campus-com">
+                    
+                </div>
+                <img class="foto" alt="primera astronauta dona" src="images/galeria/astronauta.png">
+                <img class="foto" alt="bes actors" src="images/galeria/beso II.jpg">
+                <img class="foto" alt="bes 2a guerra mundial" src="images/galeria/beso.jpg"/>
+                </div>
+                
+                <div class="column">
+                <img class="foto" alt="bes treballadors" src="images/galeria/besoIII.png"/>
+                <img class="foto" alt="la vida es bella" src="images/galeria/niño.jpg"/>
+                <img class="foto" alt="treballadors de nova york" src="images/galeria/ny.jpg"/>
+                </div>
+                
+                <div class="column">
+                <img class="foto" alt="simulador d'avions" src="images/galeria/ordenador.jpg"/>
+                <img class="foto" alt="actriu recollint l'oscar des del llit" src="images/galeria/oscars.jpg"/>
+                <img class="foto" alt="nicola tesla llegint un llibre amb la seva màquina" src="images/galeria/tesla.png"/>
+                </div> 
+            </div>               
+        </section>
+        </div>
+
+        <section class="dia">
+            <img src="images/galeria/´joker.jpg">
+            <p id="dia"><b>IMATGE DEL DIA</b> 
+                <br>El Joker s'origina fa 150 anys, quan l'escriptor més popular de França, Victor Hugo, escriu una de les novel·les menys recordades, 'L'home que riu', un melodrama extrem carregat de soroll i de fúria.
+                L'autor dels miserables es va inspirar en aquest home per crear el famós personatge del jòquer.
+                
+            </p>
+        </section>
+
+        <aside>
+        <h2  id="historia" class="titol-histories">Comparteix amb nosaltres les teves històries</h2>
+        <form action="">
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Correu electrònic" required>
+            <input type="text" placeholder="explica la teva història" required>
+            <textarea rows="8" placeholder="Inserta la imatge" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Enviar</button>
+        </form>
+        </aside>
+    </main>
+
+    <footer aria-label="peu de pàgina"> <!--pie de página-->
+        <h4>Descobreix més</h4>
+        <p>Reviu històries amb nosaltres</p>  
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest"></i>
+        </div>
+        <p>&copy; Perennial | Ariana Ariño i Rut Guardia</p>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+    
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    
+    </script>
+
+ </body>
+
+</html>
